@@ -160,9 +160,9 @@ let computer = Math.random();
 if(computer <= 0.34){
   computer = 'rock';
 }else if(computer <= 0.67){
-  computer = 'paper'
+  computer = 'paper';
 }else if(computer > 0.67){
-  computer = 'scissors'
+  computer = 'scissors';
 }
 
 function game(user, computer){
@@ -175,7 +175,7 @@ function game(user, computer){
   }else if (user === 'scissors' && computer === 'paper'){
 
 }
-
+}
   
   
 
@@ -265,7 +265,9 @@ function vowelCounter(/*add your code here*/) {
     /*add your code here*/
 }
 
-
+/*testing testing delete the line below this */
+function iNeedToBeDeletedRightNow
+  return:deletethiscodeasap
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
