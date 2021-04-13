@@ -35,14 +35,12 @@ Do the following:
    HINT: no function required
 */
 
-let behavior = "good";
-let dog = 'Noa';
-
-if (dog === 'Noa'){
-  behavior = 'bad';
-  console.log(behavior);
+let typeOfFood = 'lasagna';
+let typeOfTrash = 'diaper';
+if (typeOfTrash === 'diaper'){
+  typeOfFood = 'diaper';
+  console.log(typeOfFood);
 }
-
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -55,8 +53,9 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
+let string = "1999";
+string = Number(string);
+console.log(string)
 
 /*
 Task 1d - Multiply
@@ -67,11 +66,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a * b;
   }
-
-
+  console.log(multiply(3, 7));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -83,10 +81,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    return age * 7;
 }
-
+console.log(dogYears(9))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -116,6 +114,8 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
+
+// /*finished qa version*/ 
 function hungryDog(weight, age){
     if(age >= 1 && weight <= 5){
       return weight * 0.05;
@@ -174,8 +174,8 @@ function game(user, computer){
     return `you win!`
   }else if (user === 'scissors' && computer === 'paper'){
 
-  }
 }
+
   
   
 
