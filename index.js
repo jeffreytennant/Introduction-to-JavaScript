@@ -39,7 +39,7 @@ let typeOfFood = 'lasagna';
 let typeOfTrash = 'diaper';
 if (typeOfTrash === 'diaper'){
   typeOfFood = 'diaper';
-  console.log(typeOfFood);
+  console.log('task 1b:', typeOfFood);
 }
 
 /*
@@ -55,7 +55,7 @@ Do the following:
 
 let string = "1999";
 string = Number(string);
-console.log(string)
+console.log('task 1c:', string);
 
 /*
 Task 1d - Multiply
@@ -69,7 +69,7 @@ Do the following:
 function multiply(a, b){
     return a * b;
   }
-  console.log(multiply(3, 7));
+  console.log('task 1d:', multiply(3, 7));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -84,7 +84,7 @@ Do the following:
 function dogYears(age){
     return age * 7;
 }
-console.log(dogYears(9))
+console.log('task 2:', dogYears(9))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -114,9 +114,7 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-
-// /*finished qa version*/ 
-function hungryDog(weight, age){
+function  hungryDog(weight, age){
     if(age >= 1 && weight <= 5){
       return weight * 0.05;
     }else if(age >= 1 && weight >= 6 && weight <= 10){
@@ -173,9 +171,12 @@ function game(user, computer){
   }else if(user === 'paper' && computer === 'rock'){
     return `you win!`
   }else if (user === 'scissors' && computer === 'paper'){
-
+    return `you win!`;
+  }else{
+    return 'you lose!'
+  }
 }
-}
+console.log('task 4:',game("rock"));
   
   
 
@@ -193,7 +194,7 @@ Using the miles function below do the following:
 function miles(km){
     return km * 0.621371;
   }
-  console.log('task 5a')
+  console.log('task 5a:', 20)
 
 
 
@@ -222,10 +223,11 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
-
+function annoyingSong(number){
+        for (let i = number; i > 0; i--){
+          return "${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number-1} bottles of soda on the wall";
+      }
+    }
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -242,10 +244,20 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(personalGrade){
+  if (personalGrade >= 90){
+    return'you got an A';
+  }else if(personalGrade >= 80){
+    return 'you got a B';
+  }else if(personalGrade >= 70){
+    return 'you got a C';
+  }else if(personalGrade >= 60){
+    return 'you got a D';
+  }else if(personalGrade <= 59){
+    return 'you got an F';
   }
-  
+  }
+  console.log (grade, 7)
   
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -265,9 +277,6 @@ function vowelCounter(/*add your code here*/) {
     /*add your code here*/
 }
 
-/*testing testing delete the line below this */
-function iNeedToBeDeletedRightNow
-  return:deletethiscodeasap
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
